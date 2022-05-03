@@ -1,6 +1,8 @@
 # FFT-Radix2-Pipeplined
 ![Lines of code](https://img.shields.io/tokei/lines/github/GeorgePag4028/FFT-Radix2-Pipeplined)
 ![GitHub top language](https://img.shields.io/github/languages/top/GeorgePag4028/FFT-Radix2-Pipeplined)
+
+## Part of my thesis in Fault-Tolerance in Ntua.
 ## Explanation of Consept
 Simple implementation of fast fourier transform in Hardaware using VHDL. 
 
