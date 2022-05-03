@@ -16,9 +16,6 @@ package common is
     constant input_size : integer := 8; -- # of complex inputs in fft
     constant input_length_size : integer := 3; -- 2^input_length_size = input_size
     constant x_size : integer :=16; -- length of each number. In this implementation Q1.15 fixed point arithmetic is used.
-    
-    constant address_width : integer := 4; 
-    constant depth     : integer := 16;
 
     type complex_type is record -- Represent the complex number
         re : std_logic_vector(x_size-1 downto 0);
@@ -31,7 +28,6 @@ package common is
     type fixed_flip_type is array(natural range <>) of butterfly_type(0 to input_size-1);
 
     
-    type ram_type is array(0 to depth-1) of complex_type;
 
     function rom_tiddle return rom;
     function reverse(reverse_input : integer) return integer; 
